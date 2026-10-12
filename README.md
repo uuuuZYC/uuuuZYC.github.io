@@ -8,7 +8,7 @@ Run `python3 -m http.server 8000` from this directory, then open <http://localho
 
 ## Publication images
 
-Each `.pub` entry in `index.html` pairs a figure with the paper's details. Images appear beside the text on larger screens and above it on phones. Clicking a figure opens the full-size image.
+Each `.pub` entry in `index.html` pairs a figure with the paper's details. Images appear to the right of the text on larger screens and above it on phones. Clicking a figure opens the full-size image.
 
 `assets/images/see-it-say-it-sorted.png` is Figure 1 (reasoning pattern comparison) from *See It, Say It, Sorted*, copied unchanged from the [authors' repository](https://github.com/uuuuZYC/ECRD/blob/0bc209f599bfef0d28d19e9a34024464406a9295/assets/fig1_reasoning_pattern.png). Keep publication figures in `assets/images/` and set their actual `width`, `height`, and descriptive `alt` text in the HTML.
 
