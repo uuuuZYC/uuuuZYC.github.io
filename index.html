@@ -138,6 +138,12 @@
   .edu-detail + .edu-detail { margin-top: 0; }
   .edu-detail .k { color: var(--muted); }
 
+  /* Service */
+  .service { margin: 0; display: grid; gap: 12px; }
+  .service > div { display: grid; grid-template-columns: 176px minmax(0, 1fr); gap: 16px; }
+  .service dt { color: var(--ink); font-weight: 500; }
+  .service dd { margin: 0; color: var(--ink-2); }
+
   footer {
     display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
     padding-top: 28px;
@@ -154,6 +160,7 @@
     .name .zh { display: block; margin: 10px 0 0; font-size: .5em; }
     .sec { grid-template-columns: 1fr; gap: 18px; padding-block: 32px; }
     .edu li { grid-template-columns: 1fr; gap: 2px; }
+    .service > div { grid-template-columns: 1fr; gap: 2px; }
     .news li { grid-template-columns: 64px minmax(0, 1fr); gap: 12px; }
   }
   @media (max-width: 540px) {
@@ -196,6 +203,7 @@
     <h2>News</h2>
     <div class="body">
       <ul class="news">
+        <li><span class="date">2026.10</span><span><em>MARS</em>, a training-free framework for accelerating world action models, is released on <a href="https://arxiv.org/abs/2610.17141">arXiv</a> with <a href="https://github.com/PKU-VaLuE-Lab/MARS">open-source code</a>.</span></li>
         <li><span class="date">2026</span><span>Joined the <a href="https://github.com/PKU-VaLuE-Lab">PKU-VaLuE Lab</a>, advised by Prof. Yiwu Zhong.</span></li>
         <li><span class="date">2026.02</span><span><em>See It, Say It, Sorted</em> is accepted to <strong>CVPR 2026</strong>.</span></li>
       </ul>
@@ -206,6 +214,17 @@
     <h2>Publications<small>* equal contribution</small></h2>
     <div class="body">
       <ol class="pubs">
+        <li class="pub">
+          <div>
+            <p class="pub-title"><a href="https://arxiv.org/abs/2610.17141">MARS: Systematic Multi-Level Acceleration for World Action Models</a></p>
+            <p class="pub-authors">Zengyuan Zuo*, <span class="me">Yongchang Zhang*</span>, Guangyu Zhao, Tianze Zhang, Biao Wu, Meng Fang, Yiwu Zhong</p>
+            <p class="pub-tldr">A training-free, plug-and-play framework that removes redundant computation in world action models at three levels (attention, diffusion denoising, and consecutive policy queries), reaching up to 4× end-to-end speedup with near-original task success.</p>
+            <p class="pub-meta"><span class="venue">Under Review</span><a href="https://arxiv.org/abs/2610.17141">arXiv</a><a href="https://github.com/PKU-VaLuE-Lab/MARS">Code</a><a href="https://harbinzzy.github.io/projects/mars.html">Project Page</a></p>
+          </div>
+          <a class="pub-image" href="assets/images/mars-overview.svg" target="_blank" rel="noopener" aria-label="View full-size MARS overview figure">
+            <img src="assets/images/mars-overview.svg" alt="MARS overview: multi-level acceleration of world action model inference and the speed versus task-success trade-off on LIBERO-PRO." width="1026.43" height="401.75" loading="lazy" decoding="async">
+          </a>
+        </li>
         <li class="pub">
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2602.21497">See It, Say It, Sorted: An Iterative Training-Free Framework for Visually-Grounded Multimodal Reasoning in LVLMs</a></p>
@@ -235,6 +254,18 @@
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="service">
+    <h2>Service</h2>
+    <div class="body">
+      <dl class="service">
+        <div>
+          <dt>Conference Reviewer</dt>
+          <dd>ICLR 2027</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
