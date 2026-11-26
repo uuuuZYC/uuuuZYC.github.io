@@ -100,10 +100,6 @@
     font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 24px;
     line-height: 1.25; margin: 0; color: var(--ink);
   }
-  .sec h2 small {
-    display: block; margin-top: 6px; font: 12px/1.5 var(--mono); font-style: normal;
-    letter-spacing: .04em; color: var(--muted);
-  }
   .body > p { margin: 0 0 1em; max-width: 64ch; color: var(--ink-2); }
   .body > p:last-child { margin-bottom: 0; }
   .body strong { color: var(--ink); font-weight: 600; }
@@ -123,6 +119,7 @@
   .pub-title { font-family: var(--serif); font-size: 20px; font-weight: 500; line-height: 1.35; margin: 0; color: var(--ink); text-wrap: balance; }
   .pub-authors { margin: 8px 0 0; font-size: 15px; color: var(--ink-2); }
   .pub-authors .me { color: var(--ink); font-weight: 600; }
+  .pub-notes { display: flex; flex-wrap: wrap; gap: 0 14px; margin: 2px 0 0; font: 12px/1.6 var(--mono); letter-spacing: .04em; color: var(--muted); }
   .pub-tldr { margin: 6px 0 0; font-size: 14.5px; color: var(--muted); max-width: 64ch; }
   .pub-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin: 10px 0 0; font: 13px/1.6 var(--mono); }
   .venue { color: var(--accent); font-weight: 500; letter-spacing: .03em; }
@@ -212,13 +209,14 @@
   </section>
 
   <section class="sec" id="publications">
-    <h2>Publications<small>* equal contribution<br>† co-project leader</small></h2>
+    <h2>Publications</h2>
     <div class="body">
       <ol class="pubs">
         <li class="pub">
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2611.34849">Real2SimLab: A Unified Platform for Real-to-Simulation Transfer</a></p>
             <p class="pub-authors"><span class="me">Yongchang Zhang*†</span>, Jie Huang*†, Yunhe Ni*, Ningyu Zhou, Guangyu Zhao, Ruixun Liu, Rui Huang, Yidi Wu, TianZe Zhang, Zixiang Jiang, Xiang Li, Kevin Shen, Yiwu Zhong</p>
+            <p class="pub-notes"><span>* equal contribution</span><span>† co-project leader</span></p>
             <p class="pub-tldr">A unified platform that evaluates any real-to-simulation method on any benchmark with each benchmark's original scorer and creates training data and rewards free of benchmark videos, supporting 47 coding agents and 5 non-agent methods on 6 benchmarks.</p>
             <p class="pub-meta"><span class="venue">Preprint</span><a href="https://arxiv.org/abs/2611.34849">arXiv</a><a href="https://github.com/Real2SimHub/Real2SimLab">Code</a><a href="https://real2simhub.github.io/real2simlab/">Project Page</a></p>
           </div>
@@ -230,6 +228,7 @@
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2611.26745">MomentMem: Memorizing Key Moments for Robot Manipulation</a></p>
             <p class="pub-authors">Guangyu Zhao*, <span class="me">Yongchang Zhang*</span>, Ruizhang Jiang*, Zhihong Yu, Yuhao Zhang, Tao Wu, Qimin Zhou, Kunsong Shi, Haoran Wen, Zeyu Zhang, Yin Li, Kun Zhan, Yiwu Zhong</p>
+            <p class="pub-notes"><span>* equal contribution</span></p>
             <p class="pub-tldr">A hierarchical architecture in which a VLM-based memorizer keeps keyframes of visual details no longer observable and an executor acts on them, reaching 49.9% average success on VMBench, a new long-horizon memory benchmark, 31.7 points above the strongest baseline.</p>
             <p class="pub-meta"><span class="venue">Preprint</span><a href="https://arxiv.org/abs/2611.26745">arXiv</a><a href="https://github.com/PKU-VaLuE-Lab/MomentMem">Code</a><a href="https://pku-value-lab.github.io/MomentMem/">Project Page</a></p>
           </div>
@@ -241,6 +240,7 @@
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2610.17141">MARS: Systematic Multi-Level Acceleration for World Action Models</a></p>
             <p class="pub-authors">Zengyuan Zuo*, <span class="me">Yongchang Zhang*</span>, Guangyu Zhao, Tianze Zhang, Biao Wu, Meng Fang, Yiwu Zhong</p>
+            <p class="pub-notes"><span>* equal contribution</span></p>
             <p class="pub-tldr">A training-free, plug-and-play framework that removes redundant computation in world action models at three levels (attention, diffusion denoising, and consecutive policy queries), reaching up to 4× end-to-end speedup with near-original task success.</p>
             <p class="pub-meta"><span class="venue">Under Review</span><a href="https://arxiv.org/abs/2610.17141">arXiv</a><a href="https://github.com/PKU-VaLuE-Lab/MARS">Code</a><a href="https://harbinzzy.github.io/projects/mars.html">Project Page</a></p>
           </div>
@@ -252,6 +252,7 @@
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2602.21497">See It, Say It, Sorted: An Iterative Training-Free Framework for Visually-Grounded Multimodal Reasoning in LVLMs</a></p>
             <p class="pub-authors"><span class="me">Yongchang Zhang*</span>, Oliver Ma*, Tianyi Liu, Guangquan Zhou, Yang Chen</p>
+            <p class="pub-notes"><span>* equal contribution</span></p>
             <p class="pub-tldr">A plug-and-play decoding method that checks each reasoning step against visual evidence to curb hallucination in LVLMs, with no extra training.</p>
             <p class="pub-meta"><span class="venue">CVPR 2026</span><a href="https://arxiv.org/abs/2602.21497">arXiv</a><a href="https://github.com/uuuuZYC/See-It-Say-It-Sorted">Code</a></p>
           </div>
