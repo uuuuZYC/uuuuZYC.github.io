@@ -119,6 +119,7 @@
   .pub-title { font-family: var(--serif); font-size: 20px; font-weight: 500; line-height: 1.35; margin: 0; color: var(--ink); text-wrap: balance; }
   .pub-authors { margin: 8px 0 0; font-size: 15px; color: var(--ink-2); }
   .pub-authors .me { color: var(--ink); font-weight: 600; }
+  .pub-authors sup, .pub-notes sup { font-size: 0.62em; line-height: 0; vertical-align: 0.38em; }
   .pub-notes { display: flex; flex-wrap: wrap; gap: 0 14px; margin: 2px 0 0; font: 12px/1.6 var(--mono); letter-spacing: .04em; color: var(--muted); }
   .pub-tldr { margin: 6px 0 0; font-size: 14.5px; color: var(--muted); max-width: 64ch; }
   .pub-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin: 10px 0 0; font: 13px/1.6 var(--mono); }
@@ -215,13 +216,13 @@
         <li class="pub">
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2611.34849">Real2SimLab: A Unified Platform for Real-to-Simulation Transfer</a></p>
-            <p class="pub-authors"><span class="me">Yongchang Zhang*†</span>, Jie Huang*†, Yunhe Ni*, Ningyu Zhou, Guangyu Zhao, Ruixun Liu, Rui Huang, Yidi Wu, TianZe Zhang, Zixiang Jiang, Xiang Li, Kevin Shen, Yiwu Zhong</p>
-            <p class="pub-notes"><span>* equal contribution</span><span>† co-project leader</span></p>
+            <p class="pub-authors"><span class="me">Yongchang Zhang*<sup>†</sup></span>, Jie Huang*<sup>†</sup>, Yunhe Ni*, Ningyu Zhou, Guangyu Zhao, Ruixun Liu, Rui Huang, Yidi Wu, TianZe Zhang, Zixiang Jiang, Xiang Li, Kevin Shen, Yiwu Zhong</p>
+            <p class="pub-notes"><span>* equal contribution</span><span><sup>†</sup> co-project leader</span></p>
             <p class="pub-tldr">A unified platform that evaluates any real-to-simulation method on any benchmark with each benchmark's original scorer and creates training data and rewards free of benchmark videos, supporting 47 coding agents and 5 non-agent methods on 6 benchmarks.</p>
             <p class="pub-meta"><span class="venue">Preprint</span><a href="https://arxiv.org/abs/2611.34849">arXiv</a><a href="https://github.com/Real2SimHub/Real2SimLab">Code</a><a href="https://real2simhub.github.io/real2simlab/">Project Page</a></p>
           </div>
-          <a class="pub-image" href="assets/images/real2simlab-overview.svg" target="_blank" rel="noopener" aria-label="View full-size Real2SimLab overview figure">
-            <img src="assets/images/real2simlab-overview.svg" alt="Real2SimLab overview: visible data for the method, hidden data for the scorer only, and five steps (build, freeze, re-run, score, report) that give one record format and one scorecard." width="472" height="360" loading="lazy" decoding="async">
+          <a class="pub-image" href="assets/images/real2simlab-figure1.svg" target="_blank" rel="noopener" aria-label="View full-size Real2SimLab panel of Figure 1">
+            <img src="assets/images/real2simlab-figure1.svg" alt="Real2SimLab connects 47 coding agents and 5 non-agent methods to 6 benchmarks and a synthetic suite: a unified platform, training data, and one command that gives one scorecard." width="269" height="197" loading="lazy" decoding="async">
           </a>
         </li>
         <li class="pub">
