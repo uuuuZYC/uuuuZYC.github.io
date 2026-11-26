@@ -178,7 +178,8 @@
       <p class="role">Incoming Ph.D. Student · Fall 2027</p>
       <p class="affil">
         Member of <a href="https://github.com/PKU-VaLuE-Lab">PKU-VaLuE Lab</a><br>
-        Advised by <a href="https://yiwuzhong.notion.site/homepage">Prof. Yiwu Zhong</a>, Peking University
+        Advised by <a href="https://yiwuzhong.notion.site/homepage">Prof. Yiwu Zhong</a>, Peking University<br>
+        Co-founder of <a href="https://real2simhub.github.io/">Real2SimHub</a>
       </p>
       <p class="interests"><span>Embodied AI</span> <span>VLA</span> <span>World Action Models</span> <span>VLMs</span></p>
       <ul class="links">
@@ -211,9 +212,31 @@
   </section>
 
   <section class="sec" id="publications">
-    <h2>Publications<small>* equal contribution</small></h2>
+    <h2>Publications<small>* equal contribution<br>† co-project leader</small></h2>
     <div class="body">
       <ol class="pubs">
+        <li class="pub">
+          <div>
+            <p class="pub-title"><a href="https://arxiv.org/abs/2611.34849">Real2SimLab: A Unified Platform for Real-to-Simulation Transfer</a></p>
+            <p class="pub-authors"><span class="me">Yongchang Zhang*†</span>, Jie Huang*†, Yunhe Ni*, Ningyu Zhou, Guangyu Zhao, Ruixun Liu, Rui Huang, Yidi Wu, TianZe Zhang, Zixiang Jiang, Xiang Li, Kevin Shen, Yiwu Zhong</p>
+            <p class="pub-tldr">A unified platform that evaluates any real-to-simulation method on any benchmark with each benchmark's original scorer and creates training data and rewards free of benchmark videos, supporting 47 coding agents and 5 non-agent methods on 6 benchmarks.</p>
+            <p class="pub-meta"><span class="venue">Preprint</span><a href="https://arxiv.org/abs/2611.34849">arXiv</a><a href="https://github.com/Real2SimHub/Real2SimLab">Code</a><a href="https://real2simhub.github.io/real2simlab/">Project Page</a></p>
+          </div>
+          <a class="pub-image" href="assets/images/real2simlab-overview.svg" target="_blank" rel="noopener" aria-label="View full-size Real2SimLab overview figure">
+            <img src="assets/images/real2simlab-overview.svg" alt="Real2SimLab overview: visible data for the method, hidden data for the scorer only, and five steps (build, freeze, re-run, score, report) that give one record format and one scorecard." width="472" height="360" loading="lazy" decoding="async">
+          </a>
+        </li>
+        <li class="pub">
+          <div>
+            <p class="pub-title"><a href="https://arxiv.org/abs/2611.26745">MomentMem: Memorizing Key Moments for Robot Manipulation</a></p>
+            <p class="pub-authors">Guangyu Zhao*, <span class="me">Yongchang Zhang*</span>, Ruizhang Jiang*, Zhihong Yu, Yuhao Zhang, Tao Wu, Qimin Zhou, Kunsong Shi, Haoran Wen, Zeyu Zhang, Yin Li, Kun Zhan, Yiwu Zhong</p>
+            <p class="pub-tldr">A hierarchical architecture in which a VLM-based memorizer keeps keyframes of visual details no longer observable and an executor acts on them, reaching 49.9% average success on VMBench, a new long-horizon memory benchmark, 31.7 points above the strongest baseline.</p>
+            <p class="pub-meta"><span class="venue">Preprint</span><a href="https://arxiv.org/abs/2611.26745">arXiv</a><a href="https://github.com/PKU-VaLuE-Lab/MomentMem">Code</a><a href="https://pku-value-lab.github.io/MomentMem/">Project Page</a></p>
+          </div>
+          <a class="pub-image" href="assets/images/momentmem-moment-memory.png" target="_blank" rel="noopener" aria-label="View full-size visual moment memory figure from MomentMem">
+            <img src="assets/images/momentmem-moment-memory.png" alt="Asked to put the block where it was, a robot needs an earlier moment: full visual memory is redundant and textual memory loses details, while MomentMem keeps sparse, fine-grained keyframes." width="683" height="617" loading="lazy" decoding="async">
+          </a>
+        </li>
         <li class="pub">
           <div>
             <p class="pub-title"><a href="https://arxiv.org/abs/2610.17141">MARS: Systematic Multi-Level Acceleration for World Action Models</a></p>
@@ -275,7 +298,7 @@
       <span id="busuanzi_container_site_pv" style="display: none">Views <span id="busuanzi_value_site_pv"></span></span>
       <span id="busuanzi_container_site_uv" style="display: none">Visitors <span id="busuanzi_value_site_uv"></span></span>
     </span>
-    <span>Last updated: October 2026</span>
+    <span>Last updated: November 2026</span>
   </footer>
 
 </div>
